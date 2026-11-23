@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2026-11-23 13:10:45</p>
+                <p class='attribute'><strong>Duration: </strong>20.99 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestSauceDemo</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_compra_saucedemo</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Ingreso al sitio de la prueba: Swag Labs
+</p><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=158.0.8127.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff6f5f40f25]
+	(No symbol) [0x7ff6f5e41dd0]
+	(No symbol) [0x7ff6f5cc3433]
+	(No symbol) [0x7ff6f5cc6cbe]
+	(No symbol) [0x7ff6f64d5b0d]
+	(No symbol) [0x7ff6f64d5c7f]
+	(No symbol) [0x7ff6f65019fc]
+	(No symbol) [0x7ff6f651902a]
+	(No symbol) [0x7ff6f64fc289]
+	(No symbol) [0x7ff6f64fc220]
+	(No symbol) [0x7ff6f5cf5b01]
+	(No symbol) [0x7ff6f5cdbea1]
+	(No symbol) [0x7ff6f5cdd1d3]
+	(No symbol) [0x7ff6f63e0f4f]
+	(No symbol) [0x7ff6f6407678]
+	(No symbol) [0x7ff6f63faf68]
+	(No symbol) [0x7ff6f605e64e]
+	(No symbol) [0x7ff6f5e51713]
+	(No symbol) [0x7ff6f5e4c324]
+	(No symbol) [0x7ff6f5e4c4b4]
+	(No symbol) [0x7ff6f5e350bc]
+	(No symbol) [0x7ffd15c3dda7]
+	(No symbol) [0x7ffd161b9c5c]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\ana\OneDrive\SauceDemo_Ana\saucedemo_Ana.py", line 57, in test_compra_saucedemo
+    ).text
+      ^^^^
+  File "C:\Users\ana\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 108, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ana\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 532, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ana\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 569, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\ana\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 234, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=158.0.8127.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff6f5f40f25]
+	(No symbol) [0x7ff6f5e41dd0]
+	(No symbol) [0x7ff6f5cc3433]
+	(No symbol) [0x7ff6f5cc6cbe]
+	(No symbol) [0x7ff6f64d5b0d]
+	(No symbol) [0x7ff6f64d5c7f]
+	(No symbol) [0x7ff6f65019fc]
+	(No symbol) [0x7ff6f651902a]
+	(No symbol) [0x7ff6f64fc289]
+	(No symbol) [0x7ff6f64fc220]
+	(No symbol) [0x7ff6f5cf5b01]
+	(No symbol) [0x7ff6f5cdbea1]
+	(No symbol) [0x7ff6f5cdd1d3]
+	(No symbol) [0x7ff6f63e0f4f]
+	(No symbol) [0x7ff6f6407678]
+	(No symbol) [0x7ff6f63faf68]
+	(No symbol) [0x7ff6f605e64e]
+	(No symbol) [0x7ff6f5e51713]
+	(No symbol) [0x7ff6f5e4c324]
+	(No symbol) [0x7ff6f5e4c4b4]
+	(No symbol) [0x7ff6f5e350bc]
+	(No symbol) [0x7ffd15c3dda7]
+	(No symbol) [0x7ffd161b9c5c]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 20.99 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
